@@ -31,6 +31,8 @@ var myStrutture =
 {
 	creaFormRicercaStrutture: function () {
 		let heightResultDiv = 800;
+		let myMapsAPIKey = "AIzaSyDKosyLTmzSBke9qEETwU3Y899IyHRlDsM";
+		
 		$.ajax(
 			{
 				url: "https://www.afcaic.it/webservices/creaFormRicercaStrutture.php",
@@ -38,6 +40,7 @@ var myStrutture =
 				success: function (json) {
 					json = json.replace(/http:\/\/afcaic.it/gi, "https://afcaic.it");
 					json = json.replace("tableHeight: 200", "tableHeight: " + heightResultDiv);
+					json = json.replace("mapsApiKey: 'AIzaSyDOt9PZbJTZzHYZm6V87i9wVt_ILDT-QAg'", "mapsApiKey: '"+ myMapsAPIKey +"'");
 					$('#formRicercaStrutture').html(json);
 				},
 				error: function () {
