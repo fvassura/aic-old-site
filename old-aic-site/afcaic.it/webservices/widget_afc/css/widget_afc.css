@@ -1,0 +1,464 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 23-ott-2014, 9.39.57
+    Author     : alessandra
+*/
+
+body{
+    font-family: sans-serif;
+}
+
+/* Buttons */
+button {
+    cursor: pointer;
+}
+.wafc-button {
+    background: transparent;
+    border: none;
+}
+.wafc-button::-moz-focus-inner {
+    border: 0;
+    padding: 0;
+}
+
+
+#wafc_infoWindow_div {
+    height: 100%;
+    position: relative;
+    overflow-y: scroll;
+}
+
+#wafc_infoWindow_div ul{
+    padding: 0;
+}
+
+#wafc_infoWindow_div ul li{
+    list-style-type: none;
+    font-weight: bold;
+    padding: 10px 0;
+}
+
+#wafc_infoWindow_div ul li span{
+    font-weight: normal;
+}
+#wafc_infoWindow_div ul li span img{
+    margin: 0 5px;
+}
+
+#wafc_details button.close {
+    background: none;
+    color: #AAAAAA;
+    border: none;
+    cursor: pointer;
+    float: right;
+    padding: 5px 10px;
+    text-transform: uppercase;
+    font-weight: 300;
+    margin-top: -15px;
+    margin-right: -12px;
+    font-size: 20px;
+}
+
+.wafc_hidden{
+    display: none;
+}
+
+.wafc_placeholder, .wafc_placeholder:hover{
+    color:#000000;
+}
+
+/* form ricerca */
+.wafc-search {
+    padding:2%;
+    background:#eee; 
+    filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#ccffffff', endColorstr='#ccffffff'); /* IE */
+}
+
+
+.jumbotron h1 {
+    font-size:26px !important;
+    color:#000000;
+    font-weight:300;
+    text-transform:uppercase;
+    text-align:center;
+    margin:0 0 20px 0;
+}
+
+.selectize-input {
+    background:#fff;
+    height:43px;
+    border:none;
+    color:#000000;
+    font-weight:300;
+    font-size:16px;
+    padding:12px;
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    border-radius: 0px;
+    margin-bottom:15px;
+}
+
+.selectize-input.focus {
+    box-shadow:none;
+    height:43px;
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    border-radius: 0px;
+    padding:12px;
+    margin-bottom:15px;
+}
+
+.selectize-dropdown.single {
+    margin-top:-17px;
+    width:100%
+}
+
+
+.selectize-control.single .selectize-input:after, .selectize-control.single .selectize-input.focus:after {
+    background:url(../img/freccia.gif) no-repeat center center #E03A00;
+    content: " ";
+    display: block;
+    position: absolute;
+    width: 44px;
+    height: 100%;
+    top: 0;
+    right: 0;
+    border:none;
+    margin:0;
+}
+
+
+
+#wafc_byAddressForm, #wafc_byDistanceForm { 
+    margin-top:50px;
+    margin-bottom: 20px;
+}
+
+input[type="radio"] {
+    width:26px;
+    height:26px; 
+    margin:0 1px 0 0;
+    padding-top:5px;
+}
+
+label {
+    font-weight:300;
+    height:26px;
+    margin:0 5px 0 0;
+    font-size:16px;
+    position:relative;
+    top:-5px;
+}
+
+.wafc_searchBtnWrapper {
+    width:100%;
+    text-align:center;
+}
+
+input[type="button"] {
+    height:45px;
+    max-width:140px;
+    width:100%;
+    border:none;
+    background:#E03A00;
+    color:#FFFFFF;
+    font-weight:300;
+    text-transform:uppercase;
+    font-size:20px;
+    margin:20px auto 0 auto;
+}
+
+.wafc_radioWrapper { 
+	width:50%;
+	float:left;
+	}
+
+
+/* Mappa */
+.wafc-map {
+    width: 100%;
+    height: 600px;
+    margin-top: 50px;
+}
+
+/* Tabella */
+.dataTables_wrapper .dataTables_scroll { 
+    /*	overflow:auto;
+            overflow-x:hidden;*/
+}
+
+.dataTables_scrollHead { 
+    border: 0 none;
+    position: relative;
+    width: 100%;
+    background: #E03A00
+}
+
+.dataTables_scrollBody {
+    height: 450px;
+    width: 100%;
+    overflow: auto;
+}
+
+table.dataTable {
+    font-family: sans-serif;
+}
+
+table.dataTable thead { 
+    background:#e03a00;
+    color:#FFFFFF;
+    text-transform:uppercase;
+}
+
+table.dataTable thead tr {
+    padding:0 10px;
+}
+
+table.dataTable thead th, table.dataTable tfoot th {
+    font-weight: 300;
+}
+
+table.dataTable thead th, table.dataTable thead td {
+    border-bottom:0;
+    padding: 10px 20px;
+}
+
+table#wafc_results_table tr td , table#wafc_results_table_mobile tr td{
+    border:1px solid #CCCCCC;
+    border-top:0;
+    border-left:0;
+    font-weight:300;
+}
+
+table#wafc_results_table tr.dispari td,  table#wafc_results_table_mobile tr.dispari td{
+    background:#EEEEEE;
+}
+
+.dataTables_wrapper.no-footer .dataTables_scrollBody {
+    border-bottom:0;
+}
+
+
+/* info window */
+#wafc_infoWindow_div { 
+    overflow:hidden;
+    padding-bottom:15px;
+}
+#wafc_infoWindow_div ul {
+    overflow:auto;	
+}
+#wafc_infoWindow_div ul li {
+    padding:0;
+    margin:5px;
+    font-size:14px;
+}
+
+#wafc_infoWindow_div ul li a {
+    color:#e03a00;
+}
+#wafc_infoWindow_div h3 { 
+    color:#e03a00;
+}
+
+#wafc_details {
+    overflow:auto;
+}
+
+#wafc_infoWindow_div .detailBtnContainer{
+    float: right;
+    position: relative; 
+    top: auto; 
+    right: auto; 
+    margin-bottom: 0px;
+}
+
+
+#wafc_details button.close, #wafc_feedback button.close  {
+    background:none;
+    color:#AAAAAA;
+    border:none;
+    cursor: pointer;
+    float: right;
+    padding: 5px 10px;
+    text-transform: uppercase;
+    font-weight:300;
+    margin-top:-15px;
+    margin-right:-12px;
+    font-size:15px;
+}
+
+.close {
+	opacity:1;
+	}
+	
+h4#wafc_infoWindow_denomination {
+	color: #e03a00;
+	}
+	
+.modal-header {
+	border:0;
+	padding-bottom:0;
+	}
+	
+#wafc_details_body ul, #wafc_infoWindow_div ul {
+	 border-top: 1px solid #e5e5e5;
+	 padding-top:10px;
+	}
+
+#wafc_infoWindow_div ul {
+	margin-top:10px;
+	}
+
+/* Finestra modale */
+#wafc_details {
+    padding:10px;
+}
+#wafc_details h4,#wafc_details a  {
+    color:#e03a00;
+}
+#wafc_details ul {
+    list-style:none;
+    padding:0;
+    margin:0;
+    margin-top: 20px;
+}
+#wafc_details ul li {
+    margin-bottom:5px;
+    font-weight:500;
+}
+#wafc_details ul li ul, #wafc_details_moreinfo ul{
+    margin: 0;
+    border: 0;
+}
+#wafc_details ul li span {
+    font-weight:300;}
+#wafc_details ul li ul {
+    margin-left:20px;
+}
+#wafc_details h5 {
+    text-transform:uppercase;
+    width:100%;
+    border-bottom:1px solid #EEEEEE;
+    padding-bottom:10px;
+    margin-top:30px;
+}
+
+
+@media screen and (max-width: 480px) {
+
+    .wafc_radioWrapper {
+        float:left;
+        width:50%;
+    }
+
+    .wafc_radioWrapper {
+        float:none;
+        width:100%;
+    }
+
+
+    label {
+        font-size:15px;
+    }
+
+	 
+	.wafc_radioWrapper { 
+		width:100%;
+		float:none;
+	}
+
+}
+
+.detailTitle{
+    display: inline-block;
+    padding-right: 10px;
+}
+
+#wafc_results_table_export{
+    margin-bottom: 5px;
+}
+#wafc_results_table td {
+    cursor: pointer;
+}
+#wafc_results_table tr[role=row]:hover td {
+    background-color: #FFA687 !important;
+}
+
+//se non c'è bootstrap
+@-ms-viewport{width:device-width}
+.visible-xs,.visible-sm,.visible-md,.visible-lg{display:none!important}
+@media (max-width:767px){
+    .visible-xs{display:block!important}
+    .hidden-xs{display:none!important}
+}
+@media (min-width:768px) and (max-width:991px){
+    .hidden-sm{display:none!important}
+    .visible-sm{display:block!important}
+}
+
+#wafc_loading, #wafc_feedback{
+    text-align: center;
+}
+
+#wafc_loading img.loading{
+    vertical-align: bottom;
+}
+
+#wafc_loading:before, #wafc_feedback:before {
+    display: inline-block;
+    vertical-align: middle;
+    content: " ";
+    height: 100%;
+}
+
+#wafc_loading .modal-dialog, #wafc_feedback .modal-dialog {
+    display: inline-block;
+    text-align: left;
+    vertical-align: middle;
+}
+
+
+
+.wafc_categoryOption{
+    font-weight: bold;
+}
+.wafc_typologyOption{
+    padding-left: 30px !important;
+}
+
+#wafc_distanceSlider label {
+  position: absolute;
+  width: 20px;
+  margin-top: 20px;
+  margin-left: -10px;
+  text-align: center;
+  font-size: 70%;
+}
+
+h4{
+  font-size: 18px;
+}
+
+.wafc_results_table_export, .wafc_results_table_export img{
+    vertical-align: middle;
+}
+.wafc_results_table_export img{
+    margin-right: 5px;
+}
+
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+.clearfix:after {
+    clear: both;
+}
+
+#wafc_infoWindow_div div.clearfix{
+    height: 63px;
+}

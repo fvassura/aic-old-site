@@ -1,0 +1,55 @@
+
+@import "_variables.scss";
+
+@import "mixins/_mixin-master.scss";
+@import "_component-animations.scss";
+@import "_modals.scss";
+
+
+
+
+#wafc_details {
+    .modal-dialog {
+        max-width: 600px;
+        margin: 10px auto;
+        @media screen and (max-width: 620px) {
+            margin: 10px;
+        }
+        
+    }
+    .wdgc-close {
+        float: right;
+        font-size: 21px;
+        font-weight: 700;
+        line-height: 1;
+        padding: 2px 6px 3px;
+    }
+    .modal-body {
+        font-size: 14px;
+        line-height: 18px;
+        font-weight: lighter;
+    }
+    button {
+        &.close {
+            text-transform: uppercase;
+            background: $gray-base;
+            color: #ffffff;
+            border: none;
+            cursor: pointer;
+            padding: 5px 10px;
+            float: right;   
+        }
+    }
+    .detailBtnContainer{
+        float: right;
+        text-align: center;
+        margin: -9px 10px;
+    }
+    color: $text-color;
+    font-family: $font-family;
+}
+#wafc_infoWindow_div .detailBtnContainer{
+    position: absolute;
+    top: 0;
+    right: 0; 
+}

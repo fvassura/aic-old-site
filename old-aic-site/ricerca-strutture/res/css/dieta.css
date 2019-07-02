@@ -1,0 +1,318 @@
+/* colore di sezione: #ea6524 */
+a:visited {
+	color: #ea6524;
+	text-decoration: none;
+}
+#header {
+	background-image: url(/res/img/dieta/dieta_header_bg.jpg);
+	background-repeat: no-repeat;
+	background-color:#ea6524;
+}
+#header_prontuario {
+	position:relative;
+	height: 190px;
+	top:0px;
+	position: relative;
+	/*background-image: url(/res/img/dieta/dieta_header_bg.jpg);*/
+	background-color: #ffffff;
+	background-image: url(/res/img/dieta/prontuario_riservato.gif);
+	background-repeat: no-repeat;
+	clear: both;
+	float: none;
+}
+
+.entry_titles {
+	color: #F56125;
+}
+/*.entry a{ color:#F56125;}*/
+/*#content1 #right-col .post #content_top {*/
+/*#content_top {
+	background-image: url(/res/img/dieta/dieta_top.gif);
+	background-repeat: no-repeat;
+	background-position: 630px top;	
+}*/
+#left-col h3 {
+	background-color: #F56125;
+	background-image: url(/res/img/dieta/dieta_freccia_bar.gif);
+	background-repeat: no-repeat;
+	background-position: left center;
+}
+.menu_vert_fuoricasa{
+	height:550px;
+}
+h2 {
+	color: #F56125;
+}
+h2 a, h2 a:visited {
+	color: #F56125;
+	text-decoration: none;
+}
+h2 a:hover {
+	color: #666;
+	text-decoration: none;
+}
+#menu_top_sx #copyright{
+	padding-left:10px;
+	/*font-size: 12px;*/
+	color: #666;	
+}
+#barra_menu
+{
+	/*background-image: url(/res/img/header_menu/dieta_bar.gif);*/
+	background-color:#ea6524;
+}
+.barra_menu {
+	/*background-image: url(/res/img/header_menu/dieta_bar.gif);*/
+	background-color:#ea6524;
+}
+#barra_menu ul {
+	padding-left: 150px; 
+}
+.voce_non_cliccabile a{
+	color: #F56125;
+	text-decoration:none !important;
+	}
+.sotto_voce_non_cliccabile a{
+	color: #F56125;
+	text-decoration:none !important;
+	}
+
+.menu_laterale
+.voce a, 
+.voce a:visited,
+.sottovoce a, 
+.sottovoce a:visited{
+	color: #F56125;
+	text-decoration: none;
+	vertical-align:middle;
+}
+.menu_laterale
+.voce a:hover,
+.sottovoce a:hover{
+	color: #F56125;
+	text-decoration: underline;
+}
+.menu_laterale
+.voce_attiva a,
+.sottovoce_attiva a{
+	font-weight: 800;	
+	color: #fff!important;
+	vertical-align:middle;
+}
+.menu_laterale
+.voce{
+	padding: 0px 0px 0px 20px;
+	background-image: url(/res/img/dieta/dieta_freccia_li.gif);
+	background-repeat: no-repeat;
+	background-position: left 4px;
+}
+.menu_laterale
+.voce_attiva{
+	padding: 0px 0px 0px 20px;
+	background-image: url(/res/img/comuni/freccia_bianca.gif);
+	background-repeat: no-repeat;
+	background-position: left 4px;
+	background-color: #ea6524;
+}
+.menu_laterale
+.sottovoce{
+	padding: 0px 0px 0px 30px; /*top right bottom left */
+	background-image: url(/res/img/dieta/dieta_freccia_li_l1.gif);
+	background-repeat: no-repeat;
+	background-position: 20px 5px;
+	/*vertical-align:middle;*/
+	/*overflow-x: auto;*/
+	/*display:inline-block;*/
+}
+
+.menu_laterale
+.sottovoce_attiva{
+	padding: 0px 0px 0px 30px;
+	background-image: url(/res/img/dieta/dieta_freccia_li_l1_sel.gif);
+	background-repeat: no-repeat;
+	background-position: 20px 5px;
+	background-color: #ea6524 /*#ED2024;*/
+}
+
+
+.tab_select table, .elenco table {
+	border:0px;
+}.tab_select td, .elenco td {
+	padding:5px;
+}
+.elenco a{
+	/*color:#444444;*/
+	text-decoration:none !important;
+	}
+.tab_select_intestazione {
+	height:15px;
+	/*font-size:14px;*/
+	color:#fff;
+	background-color:#FF6600;
+	font-weight:bold;
+}
+.tab_intestazione td {
+	height:15px;
+	/*font-size:14px;*/
+	color:#ea6524;
+	background-color:#f0c2ad;
+	font-weight:bold;
+}
+
+.paginazione{
+	margin-top:8px;
+	width:100%;
+	text-align:center;
+}
+.paginazione a{
+color:#999999;
+text-decoration:none;
+}
+.paginazione a:hover{
+text-decoration:underline;
+}
+.paginazione strong{color:#FF6600;}
+.ricetta {color:#000 !important; /*font-size:12 !important;*/}
+.ricetta span{color:#FF6600 !important;}
+.ricetta li{
+	padding: 0px 0px 0px 8px;
+	background-image: url(/res/img/dieta/dieta_bullet.gif);
+	background-repeat: no-repeat;
+	background-position: left 4px
+	}
+#footer .voce_attiva {
+	color: #ea6524 !important;
+	font-weight:bolder !important;	
+}
+
+.marchio_aziende a{ text-decoration:none !important;}
+.marchio_aziende a:hover{ text-decoration:underline;}
+.marchio_aziende span{ color:#FF6600;}
+
+#login_pro label{ width:100px; font-weight:bold; color:#ea6524; }
+#login_pro input[type=text], #login_pro input[type=password]{ width:125px; }
+
+.el_prod_prontuario a{ text-decoration:none !important;}
+.el_prod_prontuario ul{ margin:0px 0px 0px 0px; padding:0px 0px 0px 0px;}
+.el_prod_prontuario li{ padding-bottom:5px;}
+.S li{ /*USATA IN PRONTUARIO ONLINE, serve nome corto per ridurre lunghezza pagina*/
+	list-style-position:inside;
+	vertical-align:middle;
+	padding-right:5px;
+	padding-left:7px;
+	background-image:url(/b.gif);
+	background-repeat:no-repeat;
+	background-position:left 3px;
+	/*height:16px;
+	width:16px;*/
+	}
+	/*
+.Sm li:after {
+	content:url(/m.gif)
+	}
+.Ss li:after {
+	content:url(/s.gif)
+	}
+.Sg li:after {
+	content:url(/g.gif)
+}
+*/
+.CDS{ /* categoria, ditta e sottomarca */
+    padding-left:0px !important;
+    background-image:none !important;
+    list-style-type:none !important;
+	font-weight:bolder;
+}
+.Sm:after {	content:url(/m.gif);	height:16px; width:16px;}
+.Ss:after {	content:url(/s.gif); height:16px; width:16px;}
+.Sg:after {	content:url(/g.gif);  height:16px; width:16px;}
+.Ssm:after {content:url(/sm.gif); height:16px; width:16px;}
+.Ssg:after {content:url(/sg.gif); height:16px; width:16px;}
+.Sgm:after {content:url(/gm.gif);height:16px; width:16px; }
+
+.img_permesso{
+	background-image:url(/res/img/comuni/permesso.gif);
+	background-repeat:no-repeat;
+	height:22px;
+	padding-top:1px;
+	padding-bottom:1px;
+	padding-left:24px;
+	margin-top:0px;
+	margin-bottom:0px;	
+	/*display:block;*/
+	position: relative;
+	/*clear:left;
+	/*float:left;*/
+	/*text-align:center;*/
+	/*border:1px solid black;*/
+	/*float: left;*/
+/*display:inline;*/
+	/*width="22" height="22" alt="permesso" title="permesso"*/
+}
+.simboli_abc{
+vertical-align:middle;
+}
+.img_vietato{
+	background-image:url(/res/img/comuni/vietato.gif);
+	background-repeat:no-repeat;
+	height:22px;
+	padding-top:1px;
+	padding-bottom:1px;
+	padding-left:24px;
+	margin-top:0px;
+	margin-bottom:0px;	
+	/*display:block;*/
+	position: relative;
+	clear:left;
+	float:left;
+	text-align:center;
+}
+.img_rischio {
+	background-image:url(/res/img/comuni/rischio.gif);
+	background-repeat:no-repeat;
+	background-position:middle;
+	height:22px;
+	padding-top:1px;
+	padding-bottom:1px;
+	padding-left:24px;
+	margin-top:0px;
+	margin-bottom:0px;	
+	/*display:block;*/
+	position: relative;
+	clear:left;
+	float:left;
+    vertical-align:middle;
+	/*text-align:center;*/
+}
+
+.DTTT_print_info h6 { color: #000 !important; }
+
+div.ui-datepicker{
+ font-size:12px;
+}
+
+
+#ui-datepicker-div { z-index: 50 !important; }
+
+.voce_rossa a { color: red !important; font-weight: bold !important; }
+
+.border_red 
+{
+    border-style:solid !important;
+    border-width:1px !important;
+    border-color: red !important;
+}
+
+.hidden_field { display:none; }
+
+
+table#tableStrutture {
+    font-size: 10pt;
+}
+
+#centeredLogo a, #centeredLogo p {
+    width: 437px;
+    height: 113px;
+    margin: 0 auto;
+    display: block;
+}
