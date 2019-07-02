@@ -1,8 +1,11 @@
- <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
+
 <head id="ctl00_Head1">
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><meta name="author" content="Antonio Pascuccio - www.intsrl.it" /><meta name="keywords" content="Antonio Pascuccio,web master,int srl,www.intsrl.it,sviluppo e progettazione software,java,asp.net,c#,j2ee,innovazione e tecnologie" />
-<title>Dieta senza glutine</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="author" content="Antonio Pascuccio - www.intsrl.it" />
+    <meta name="keywords" content="Antonio Pascuccio,web master,int srl,www.intsrl.it,sviluppo e progettazione software,java,asp.net,c#,j2ee,innovazione e tecnologie" />
+    <title>Dieta senza glutine</title>
 
     <script src="../res/js/global.js" type="text/javascript"></script>
     <!--Modifiche Adami Simone, Dot Next 16-10-13 -->
@@ -10,9 +13,9 @@
     <script src="../res/jquery-ui-1.10.3.custom/js/jquery-1.9.1.js" type="text/javascript"></script>
     <script src="../res/jquery-ui-1.10.3.custom/js/jquery-ui-1.10.3.custom.min.js" type="text/javascript"></script>
     <script src="../res/jquery-ui-1.10.3.custom/js/jquery.ui.datepicker-it.js" type="text/javascript"></script>
-    
-        <script src="../res/js/ricercaStrutture.js" type="text/javascript"></script>
-    
+
+    <script src="../res/js/ricercaStrutture.js" type="text/javascript"></script>
+
     <!--<script src="../res/js/ricercaStrutture.js" type="text/javascript"></script>-->
 
     <script src="../res/js/myCommon.js" type="text/javascript"></script>
@@ -32,13 +35,14 @@
     <link href="../res/jquery-ui-1.10.3.custom/css-blitzer/jquery-ui-1.10.3.custom.min.css" rel="stylesheet" type="text/css" />
     <link href="../res/css/celiachia.css" rel="stylesheet" type="text/css" />
     <link href="../res/css/dieta.css" rel="stylesheet" type="text/css" />
-     <style>
+    <style>
         .ui-autocomplete {
             max-height: 200px;
             overflow-y: auto;
             /* prevent horizontal scrollbar */
             overflow-x: hidden;
         }
+
         /* IE 6 doesn't support max-height
         * we use height instead, but this forces the menu to always be this tall
         */
@@ -49,178 +53,42 @@
 
 
 </head>
-<body onload="MM_preloadImages('../res/img/header_menu/home_roll.png','../res/img/header_menu/aic_roll.png','../res/img/header_menu/norme_roll.png','../res/img/header_menu/info_roll.png','../res/img/header_menu/comunicazione_roll.png','../res/img/header_menu/fondazione_roll.png')">
-<form name="aspnetForm" method="post" action="Dieta.aspx?SS=95&amp;M=102" id="aspnetForm">
-<div>
-<input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="" />
-<input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="" />
-<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUKLTE0MDk1MjIwNg9kFgJmD2QWAgIDD2QWCgIND2QWAgIBDxYCHgRUZXh0BesCPGxpIGNsYXNzPSd2b2NlJz48YSBocmVmPSdEaWV0YS5hc3B4P1NTPTE4Mic+QWxpbWVudGF6aW9uZTwvYT48L2xpPiB8IDxsaSBjbGFzcz0ndm9jZSc+PGEgaHJlZj0nRGlldGEuYXNweD9TUz0xODUnPlByb250dWFyaW88L2E+PC9saT4gfCA8bGkgY2xhc3M9J3ZvY2UnPjxhIGhyZWY9J0RpZXRhLmFzcHg/U1M9MTc2Jz5NYXJjaGlvIFNwaWdhIEJhcnJhdGE8L2E+PC9saT4gfCA8bGkgY2xhc3M9J3ZvY2VfYXR0aXZhJz48YSBocmVmPSdEaWV0YS5hc3B4P1NTPTk1Jz5BbGltZW50YXppb25lIEZ1b3JpIENhc2E8L2E+PC9saT4gfCA8bGkgY2xhc3M9J3ZvY2UnPjxhIGhyZWY9J0RpZXRhLmFzcHg/U1M9MTY4Jz5SaWNldHRlPC9hPjwvbGk+ZAIOD2QWAgIBDxYCHwAFmhU8bGkgY2xhc3M9J3ZvY2VfYXR0aXZhJz48YSBocmVmPSdEaWV0YS5hc3B4P1NTPTk1Jk09MTAyJz5Qcm9nZXR0byBBbGltZW50YXppb25lIEZ1b3JpIENhc2E8L2E+PC9saT48bGkgY2xhc3M9J3ZvY2UnPjxhIGhyZWY9Jy9ESUVUQS9hZmMvUmlzdG9yYW50aUhvdGVsLmFzcHg/U1M9OTUmTT05OSc+UmlzdG9yYW50aS9QaXp6ZXJpZS9BbGJlcmdoaS9Ib3RlbDwvYT48L2xpPjxsaSBjbGFzcz0ndm9jZSc+PGEgaHJlZj0nRGlldGEuYXNweD9TUz05NSZNPTEwNjEnPkxhYm9yYXRvcmkgQXJ0aWdpYW5hbGk8L2E+PC9saT48bGkgY2xhc3M9J3ZvY2UnPjxhIGhyZWY9Jy9ESUVUQS9hZmMvYmFyLmFzcHg/U1M9OTUmTT0xMDMnPkJhcjwvYT48L2xpPjxsaSBjbGFzcz0ndm9jZSc+PGEgaHJlZj0nL0RJRVRBL2FmYy9CYW5kQi5hc3B4P1NTPTk1Jk09MTA0Jz5CZWQgJiBCcmVha2Zhc3Q8L2E+PC9saT48bGkgY2xhc3M9J3ZvY2UnPjxhIGhyZWY9J0RpZXRhLmFzcHg/U1M9OTUmTT0xMDQ2Jz5SaWZ1Z2kgZGkgbW9udGFnbmE8L2E+PC9saT48bGkgY2xhc3M9J3ZvY2UnPjxhIGhyZWY9Jy9ESUVUQS9hZmMvZ2VsYXRlcmllLmFzcHg/U1M9OTUmTT0xOTcnPkdlbGF0ZXJpZTwvYT48L2xpPjxsaSBjbGFzcz0ndm9jZSc+PGEgaHJlZj0nRGlldGEuYXNweD9TUz05NSZNPTE3OSc+QWxpbWVudGF6aW9uZSBpbiBWaWFnZ2lvPC9hPjwvbGk+PGxpIGNsYXNzPSdzb3R0b3ZvY2UnPjxhIGhyZWY9Jy9ESUVUQS9hZmMvQWlyZXN0LmFzcHg/U1M9OTUmTT02OTUnPkFpcmVzdDwvYT48L2xpPjxsaSBjbGFzcz0nc290dG92b2NlJz48YSBocmVmPScvRElFVEEvYWZjL2F1dG9ncmlsbC5hc3B4P1NTPTk1Jk09MTgwJz5BdXRvZ3JpbGw8L2E+PC9saT48bGkgY2xhc3M9J3NvdHRvdm9jZSc+PGEgaHJlZj0nL0RJRVRBL2FmYy9maW5pZ3JpbGwuYXNweD9TUz05NSZNPTE5OSc+RmluaWdyaWxsPC9hPjwvbGk+PGxpIGNsYXNzPSdzb3R0b3ZvY2UnPjxhIGhyZWY9Jy9ESUVUQS9hZmMvTXlDaGVmLmFzcHg/U1M9OTUmTT01MDYnPk15Y2hlZjwvYT48L2xpPjxsaSBjbGFzcz0ndm9jZSc+PGEgaHJlZj0nRGlldGEuYXNweD9TUz05NSZNPTUxMyc+QmFyY2EgYSBWZWxhPC9hPjwvbGk+PGxpIGNsYXNzPSd2b2NlJz48YSBocmVmPSdEaWV0YS5hc3B4P1NTPTk1Jk09MTAzOSc+Q2VudHJpIFZlbGljaTwvYT48L2xpPjxsaSBjbGFzcz0ndm9jZSc+PGEgaHJlZj0nRGlldGEuYXNweD9TUz05NSZNPTUxNCc+Q3JvY2llcmU8L2E+PC9saT48bGkgY2xhc3M9J3ZvY2UnPjxhIGhyZWY9J0RpZXRhLmFzcHg/U1M9OTUmTT05NDUnPlBhcmNoaSBEaXZlcnRpbWVudG88L2E+PC9saT48bGkgY2xhc3M9J3ZvY2UnPjxhIGhyZWY9J0RpZXRhLmFzcHg/U1M9OTUmTT01MTUnPlZlbmRpbmc8L2E+PC9saT48bGkgY2xhc3M9J3ZvY2UnPjxhIGhyZWY9J0RpZXRhLmFzcHg/U1M9OTUmTT01MTYnPkRTIFBpenphIFBvaW50PC9hPjwvbGk+PGxpIGNsYXNzPSd2b2NlIF9ub25fY2xpY2NhYmlsZSc+PGE+UGFydG5lcnNoaXAgZSBTZXJ2aXppPC9hPjwvbGk+PGxpIGNsYXNzPSdzb3R0b3ZvY2UnPjxhIGhyZWY9J0RpZXRhLmFzcHg/U1M9OTUmTT0xMDcnPkdyb20gZ2VsYXRlcmllPC9hPjwvbGk+PGxpIGNsYXNzPSdzb3R0b3ZvY2UnPjxhIGhyZWY9J0RpZXRhLmFzcHg/U1M9OTUmTT0xMDgnPjg5LjI0LjI0PC9hPjwvbGk+PGxpIGNsYXNzPSdzb3R0b3ZvY2UnPjxhIGhyZWY9J0RpZXRhLmFzcHg/U1M9OTUmTT01MDgnPlNhcGVyZSBJbnNpZW1lIC0gY2FtcG8gZXN0aXZvIGluZ2xlc2UgcGVyIG1pbm9yaTwvYT48L2xpPjxsaSBjbGFzcz0nc290dG92b2NlJz48YSBocmVmPSdEaWV0YS5hc3B4P1NTPTk1Jk09MTA3NCc+U3BlY2lhbCBHdWVzdCBBbHBpdG91cjwvYT48L2xpPjxsaSBjbGFzcz0nc290dG92b2NlJz48YSBocmVmPSdEaWV0YS5hc3B4P1NTPTk1Jk09NTA5Jz5CdW9uQ2hlZjwvYT48L2xpPjxsaSBjbGFzcz0nc290dG92b2NlJz48YSBocmVmPSdEaWV0YS5hc3B4P1NTPTk1Jk09OTQxJz5EYXkgUmlzdG9zZXJ2aWNlPC9hPjwvbGk+PGxpIGNsYXNzPSdzb3R0b3ZvY2UnPjxhIGhyZWY9J0RpZXRhLmFzcHg/U1M9OTUmTT04MjInPlBlbGxlZ3JpbmkgQ2FyZDwvYT48L2xpPjxsaSBjbGFzcz0nc290dG92b2NlJz48YSBocmVmPSdEaWV0YS5hc3B4P1NTPTk1Jk09NTExJz5UaWNrZXQgUmVzdGF1cmFudDwvYT48L2xpPjxsaSBjbGFzcz0nc290dG92b2NlJz48YSBocmVmPSdEaWV0YS5hc3B4P1NTPTk1Jk09NTEwJz5Ub3JuYSBRdWkhIFRpY2tldDwvYT48L2xpPjxsaSBjbGFzcz0nc290dG92b2NlJz48YSBocmVmPSdEaWV0YS5hc3B4P1NTPTk1Jk09OTE0Jz5XZWxmYXJlIENvbXBhbnk8L2E+PC9saT48bGkgY2xhc3M9J3NvdHRvdm9jZSc+PGEgaHJlZj0nRGlldGEuYXNweD9TUz05NSZNPTUxMic+UE9JIHBlciBUb20gVG9tIDwvYT48L2xpPjxsaSBjbGFzcz0ndm9jZSc+PGEgaHJlZj0nRGlldGEuYXNweD9TUz05NSZNPTUxOSc+UmVnb2xlIEZvbmRhbWVudGFsaSBwZXIgdW5hIEFsaW1lbnRhemlvbmUgUHJpdmEgZGkgR2x1dGluZSBGdW9yaSBDYXNhPC9hPjwvbGk+PGxpIGNsYXNzPSd2b2NlJz48YSBocmVmPSdEaWV0YS5hc3B4P1NTPTk1Jk09NzgxJz5BSUMgTW9iaWxlPC9hPjwvbGk+PGxpIGNsYXNzPSd2b2NlJz48YSBocmVmPSdEaWV0YS5hc3B4P1NTPTk1Jk09ODI1Jz5BZ2dpb3JuYW1lbnRpIGFsbGEgR3VpZGEgQUZDIDwvYT48L2xpPmQCDw9kFgICAQ8WAh8ABSFQcm9nZXR0byBBbGltZW50YXppb25lIEZ1b3JpIENhc2FkAhAPZBYCAgEPFgIfAAXyPDwhLS1UQUJFTExBIEFUVEVOWklPTkUtLT4gDQo8dGFibGUgYm9yZGVyPSIwIiBjZWxsc3BhY2luZz0iMCIgY2VsbHBhZGRpbmc9IjAiIHdpZHRoPSIxMDAlIiBhbGlnbj0iY2VudGVyIj4NCjx0Ym9keT4NCjx0cj4NCjx0ZCB2YWxpZ249InRvcCI+DQo8dGFibGUgc3R5bGU9ImJvcmRlcjogMXB4IHNvbGlkICNjY2NjY2M7IiBjZWxsc3BhY2luZz0iMCIgY2VsbHBhZGRpbmc9IjAiIHdpZHRoPSI4NiUiIGFsaWduPSJjZW50ZXIiPg0KPHRib2R5Pg0KPHRyPg0KPHRkIHN0eWxlPSJib3JkZXI6IDFweCBzb2xpZCAjY2NjY2NjOyBwYWRkaW5nOiAxNXB4IDEwcHggOHB4OyBtYXJnaW4tdG9wOiA3OHB4OyBjb2xvcjogIzY3Njc2NzsgZm9udC1zaXplOiA4MCU7IGxpbmUtaGVpZ2h0OiAxNnB4OyIgY29sc3Bhbj0iMyIgaGVpZ2h0PSIyMzUiIHZhbGlnbj0idG9wIj4NCjxkaXYgc3R5bGU9InBvc2l0aW9uOiByZWxhdGl2ZTsiPg0KPGRpdiBzdHlsZT0icG9zaXRpb246IGFic29sdXRlOyBib3JkZXI6IDFweCBzb2xpZCAjY2NjY2NjOyBjb2xvcjogI2NjMzMzMzsgcGFkZGluZy1sZWZ0OiA1cHg7IHBhZGRpbmctcmlnaHQ6IDVweDsgYmFja2dyb3VuZC1jb2xvcjogI2ZmZmZmZjsgdG9wOiAtMjVweDsgbGVmdDogLTVweDsiPjxzdHJvbmc+QXR0ZW56aW9uZTwvc3Ryb25nPjwvZGl2Pg0KPC9kaXY+DQo8cD48YnIgLz5BdnZpc28gYWdsaSB1dGVudGkuIEFJQyBub24gY2VkZSBuw6kgdHJhc2ZlcmlzY2UgYWQgYWx0cmkgc2l0aSBpbnRlcm5ldCogaWwgcHJvcHJpbyBkYXRhLWJhc2UgZGkgbG9jYWxpIGluZm9ybWF0aSwgcGVyIGN1aSBub24gw6ggcmVzcG9uc2FiaWxlIGRlbGzigJlhdHRlbmRpYmlsaXTDoCBlIGRlbGzigJlhZ2dpb3JuYW1lbnRvIGRpIGFsdHJpIHNpdGkgZGVkaWNhdGkgYWxsYSByaXN0b3JhemlvbmUgc2VuemEgZ2x1dGluZS48L3A+DQo8cD5HbGkgdW5pY2kgc2l0aSB3ZWIgY2hlIHJpcG9ydGFubyBs4oCZZWxlbmNvIGFnZ2lvcm5hdG8gdWZmaWNpYWxlIGRlaSBsb2NhbGkgYWRlcmVudGkgYWwgcHJvZ2V0dG8gQUZDIEFJQyBzb25vIHF1ZXN0byBlIGkgc2l0aSB3ZWIgZGkgYWxjdW5lIEFJQyBMb2NhbGkgKHBlciBpIHRlcnJpdG9yaSBkaSBjb21wZXRlbnphKS48L3A+DQo8cD5SaWNvcmRpYW1vIGNoZSBvZ25pIGRpcml0dG8gc3VsbGUgYmFuY2hlIGRhdGkgQUlDIMOoIHJpc2VydmF0byBlIGNvcGVydG8gZGEgY29weXJpZ2h0ICh2ZWRpICJub3RlIiwgaW4gZm9uZG8gYWxsYSBwYWdpbmEpLjwvcD4NCjxwPlsqYSBlc2NsdXNpb25lIGRlaSBzaXRpIGludGVybmV0IGRlaSBzZXJ2aXppIEJ1b25pIFBhc3RvOiBCdW9uQ2hlZiwgRGF5IFJpc3Rvc2VydmljZSwgUGVsbGVncmluaSBDYXJkLCBUaWNrZXQgUmVzdGF1cmFudCBlIFRvcm5hIFF1aSFUaWNrZXQuXTwvcD4NCjwvdGQ+DQo8L3RyPg0KPC90Ym9keT4NCjwvdGFibGU+DQo8L3RkPg0KPC90cj4NCjwvdGJvZHk+DQo8L3RhYmxlPg0KPCEtLUVORCAgIFRBQkVMTEEgQVRURU5aSU9ORS0tPg0KPHA+SWwgUHJvZ2V0dG8gQWxpbWVudGF6aW9uZSBGdW9yaSBDYXNhIG5hc2NlIGRhbGwnZXNpZ2VuemEgZGVsbCdBc3NvY2lhemlvbmUgSXRhbGlhbmEgQ2VsaWFjaGlhIGRpIGNyZWFyZSB1bmEgY2F0ZW5hIGRpIGVzZXJjaXppIGluZm9ybWF0aSBzdWxsYSBjZWxpYWNoaWEgY2hlIHBvc3Nhbm8gb2ZmcmlyZSB1biBzZXJ2aXppbyBpZG9uZW8gYWxsZSBlc2lnZW56ZSBhbGltZW50YXJpIGRlaSBjZWxpYWNpLiBQdW9pIHRyb3ZhcmUgdHV0dGkgZ2xpIGVzZXJjaXppIGRlbCBuZXR3b3JrIGFuY2hlIHRlbGVmb25hbmRvIGFsbOKAmDg5LjI0LjI0LjwvcD4NCjxkaXY+PGltZyBzcmM9Imh0dHA6Ly93d3cuY2VsaWFjaGlhLml0L3B1YmxpYy9iby91cGxvYWQvZGlldGFcYWZjX2ltbWFnaW5pL0FJQ19sb2dvQUZDX29yaXp6LmpwZyIgYm9yZGVyPSIwIiBhbHQ9IkFJQ19sb2dvQUZDX29yaXp6LmpwZyIgdGl0bGU9IkFJQ19sb2dvQUZDX29yaXp6LmpwZyIgd2lkdGg9IjMzOSIgaGVpZ2h0PSI4OCIgLz4gPGltZyBzcmM9Imh0dHA6Ly93d3cuY2VsaWFjaGlhLml0L3B1YmxpYy9iby91cGxvYWQvZGlldGFcYWZjX2ltbWFnaW5pL0FJQ19sb2dvQUZDX3F1YWRyb19yb3Nzby5qcGciIGJvcmRlcj0iMCIgYWx0PSJBSUNfbG9nb0FGQ19xdWFkcm9fcm9zc28uanBnIiB0aXRsZT0iQUlDX2xvZ29BRkNfcXVhZHJvX3Jvc3NvLmpwZyIgLz48L2Rpdj4NCjxwPklsIHByb2dldHRvIEFsaW1lbnRhemlvbmUgRnVvcmkgQ2FzYSBoYSBkaXZlcnNlIGNvbXBvbmVudGk6PGJyIC8+UHJvZ2V0dG8gUmlzdG9yYXppb25lIChSaXN0b3JhbnRpLCBQaXp6ZXJpZSwgVHJhdHRvcmllLCBPc3RlcmllLCBBbGJlcmdoaSwgSG90ZWwsIFN1bW1lciBDYW1wLCBWaWxsYWdlLCBDYXNlIFZhY2FuemUsIEJhci9DYWZmZXR0ZXJpZSwgQmFyL1Rhdm9sYSBDYWxkYSwgUGFuaW5vdGVjaGUsIFB1YiwgQ3JlcGVyaWUsIEVub3RlY2hlLCBDYXRlcmluZywgU2FsZSBSaWNldmltZW50aSkuPGJyIC8+UHJvZ2V0dG8gR2VsYXRlcmllIDxiciAvPlByb2dldHRvIENvbGF6aW9uZSA8YnIgLz5Qcm9nZXR0byBCJkIgPGJyIC8+UHJvZ2V0dG8gQmFyY2EgYSBWZWxhPGJyIC8+UHJvZ2V0dGkgU3BlY2lhbGkgKEFsaW1lbnRhemlvbmUgaW4gVmlhZ2dpbywgQ29vcC4gRC5PLkMuLCBTb2dnaW9ybmkgZXN0aXZpLCBDcm9jaWVyZSwgR3JvbSBHZWxhdGVyaWUsIFZlbmRpbmcpLjwvcD4NCjwhLS1UQUJFTExBIEFUVEVOWklPTkUtLT4NCjxwPkFkIGVjY2V6aW9uZSBkZWkgUHJvZ2V0dGkgU3BlY2lhbGksIGNoZSBwcmV2ZWRvbm8gcGVyY29yc2kgcGFydGljb2xhcmksIGVzc2VyZSB1biBlc2VyY2l6aW8gZGVsbGEgY2F0ZW5hIHNpZ25pZmljYTo8YnIgLz4tIGF2ZXJlIHBhcnRlY2lwYXRvIGFkIHVuIENvcnNvIEJhc2Ugb3JnYW5penphdG8gZGFsbGUgQUlDIFJlZ2lvbmFsaSBlL28gZGEgZW50aSBkYSBBSUMgT25sdXMgcmljb25vc2NpdXRpLCBzdWxsYSBjZWxpYWNoaWEgZSBzdWxs4oCZYWxpbWVudGF6aW9uZSBzZW56YSBnbHV0aW5lOzxiciAvPi0gYXZlcmUgdWx0aW1hdG8gbGEgZm9ybWF6aW9uZSBjb24gc3VjY2Vzc2l2aSBpbmNvbnRyaS9jb3JzaSBhIGN1cmEgZGVsbCdBSUMgUmVnaW9uYWxlOyA8YnIgLz4tIHJpY2V2ZXJlIGlsIG1hdGVyaWFsZSBpbmZvcm1hdGl2byBkZWxs4oCZQXNzb2NpYXppb25lOyA8YnIgLz4tIGNvbnNlbnRpcmUgY29udHJvbGxpIHBlcmlvZGljaSBkYSBwYXJ0ZSBkZWxsJ0FJQyBSZWdpb25hbGU7IDxiciAvPi0gdXRpbGl6emFyZSBwcm9kb3R0aSB0cmEgcXVlbGxpOjwvcD4NCjx1bCBzdHlsZT0ibGlzdC1zdHlsZS1wb3NpdGlvbjogaW5zaWRlOyBsaXN0LXN0eWxlLXR5cGU6IGRpc2M7IG1hcmdpbi1sZWZ0OiAyMHB4OyI+DQo8bGk+ZGVsbGEgY2F0ZWdvcmlhIHBlcm1lc3NpIChuYXR1cmFsbWVudGUgc2VuemEgZ2x1dGluZSBlIG5vbiBhIHJpc2NoaW8gcGVyIGkgY2VsaWFjaSk7IDwvbGk+DQo8bGk+Y29uIG5vdGlmaWNhIG1pbmlzdGVyaWFsZSwgaW5zZXJpdGkgbmVsIFJlZ2lzdHJvIE5hemlvbmFsZSBkZWdsaSBBbGltZW50aSBzZW56YSBnbHV0aW5lIGRlbCBNaW5pc3Rlcm8gZGVsbGEgU2FsdXRlIGNvbiBjbGFpbSDigJxkaWV0ZXRpY28gc2VuemEgZ2x1dGluZeKAnTsgPC9saT4NCjxsaT5wcmVzZW50aSBuZWwgUHJvbnR1YXJpbyBkZWdsaSBBbGltZW50aSBBSUMgLSB1bHRpbWEgZWRpemlvbmU7IDwvbGk+DQo8bGk+ZGkgdXNvIGNvcnJlbnRlIGNvbiBjbGFpbSDigJxzZW56YSBnbHV0aW5l4oCdOyA8L2xpPg0KPGxpPmNvbiBtYXJjaGlvIFNwaWdhIEJhcnJhdGEgcmlsYXNjaWF0byBkYSBBSUM8L2xpPg0KPC91bD4NCjxwPjxiciAvPi0gYXR0dWFyZSBwcm9jZWR1cmUgcGVyIGV2aXRhcmUgbGEgY29udGFtaW5hemlvbmUgZGEgZ2x1dGluZSBkYWwgcHJvY2Vzc28gZGkgbGF2b3JhemlvbmUgc2lubzogPGJyIC8+YS4gYWwgc2Vydml6aW8gYSB0YXZvbGEgZGVsbGEgcGlldGFuemEgKFByb2dldHRvIFJpc3RvcmF6aW9uZSk7IDxiciAvPmIuIGFsbGEgZGlzdHJpYnV6aW9uZSBkZWwgZ2VsYXRvIChQcm9nZXR0byBHZWxhdGVyaWUpOzxiciAvPmMuIGFsIHNlcnZpemlvIGEgdGF2b2xhIGRlbGxhIGNvbGF6aW9uZSAoUHJvZ2V0dG8gQiZCLCBIb3RlbCBlIEJhcik7IDxiciAvPmQuIGFsIHNlcnZpemlvIGTigJlhc3BvcnRvKjwvcD4NCjxwPsKgPC9wPg0KPHA+TmVsbGEgc2V6aW9uZSBGQVEgc29ubyBpbmRpY2F0ZSBsZSA8YSBocmVmPSJodHRwOi8vd3d3LmNlbGlhY2hpYS5pdC9tZW51L2ZhcS5hc3B4P2lkY2F0PTE5JmlkZmFxPTEwNyI+bW9kYWxpdMOgIHBlciBnbGkgZXNlcmNlbnRpIHBlciBhZGVyaXJlPC9hPiBlZCDDqCBwb3NzaWJpbGUgc2NhcmljYXJlIGlsIG1vZHVsbyBkaSBhZGVzaW9uZS48L3A+DQo8cD5BbGN1bmkgY29uc2lnbGk6PGJyIC8+LSBlZmZldHR1YXJlIHNlbXByZSBsYSBwcmVub3RhemlvbmUgY29uIGFudGljaXBvOyA8YnIgLz4tIGlsIG5vbWUgaW5kaWNhdG8gZGFnbGkgZXNlcmNlbnRpIHN1bGxhIEd1aWRhIGNvbWUgIlJlZmVyZW50ZSIgw6ggbGEgcGVyc29uYSByZXNwb25zYWJpbGUgZGVsIHNlcnZpemlvIGdsdXRlbiBmcmVlIGFsbCdpbnRlcm5vIGRlbCBsb2NhbGUsIG1hIHZpIMOoIGwnb2JibGlnbyBwZXIgaWwgdGl0b2xhcmUgZGkgZ2FyYW50aXJlIGNoZSB0dXR0byBpbCBwZXJzb25hbGUgc2lhIGRlYml0YW1lbnRlIGluZm9ybWF0byBzdWwgc2Vydml6aW8gb2ZmZXJ0bzsgPGJyIC8+LSBwcmltYSBkaSBvcmRpbmFyZSBmYXJzaSBzZW1wcmUgcmljb25vc2NlcmUgY29tZSBjbGllbnRlIGNlbGlhY287IDxiciAvPi0gbm9uIGFiYmFzc2FyZSBtYWkgaWwgbGl2ZWxsbyBkaSBhdHRlbnppb25lLjwvcD4NCjxwPlByZW5vdGF6aW9uZTogPGJyIC8+QWxjdW5lIHN0cnV0dHVyZSBub24gbmVjZXNzaXRhbm8gZGkgcHJlbm90YXppb25lLCBtYSBpbiB0dXR0ZSBsZSBhbHRyZSDDqCBhc3NvbHV0YW1lbnRlIG5lY2Vzc2FyaWEgcGVyIHBlcm1ldHRlcmUgdW5hIGJ1b25hIG9yZ2FuaXp6YXppb25lIGRpIGN1Y2luYSBjaGUgcmlzcG9uZGEgYWxsZSBlc2lnZW56ZSBkaSBzaWN1cmV6emEgbmVsbOKAmWVsYWJvcmF6aW9uZSBkZWwgbWVuw7kgc2VuemEgZ2x1dGluZTsgbm9uIHByZW5vdGFyZSBwdcOyIHNpZ25pZmljYXJlLCBpbiBtb2x0aSBjYXNpLCBtZXR0ZXJlIGluIGRpZmZpY29sdMOgIGzigJllc2VyY2VudGUsIGRpZmZpY29sdMOgIGNoZSBwdcOyIHRyYWR1cnNpIGluIHVuYSBvZmZlcnRhIGluZmVyaW9yZSBpbiBxdWFudGl0w6AsIGluIHF1YWxpdMOgIGUgaW4gc2ljdXJlenphLiBJbm9sdHJlIGFsY3VuZSBzdHJ1dHR1cmUgc29ubyBhcGVydGUgc29sbyBhIGNlbmEgbyBzb2xvIGEgcHJhbnpvIGUgcHJlbm90YXJlIHB1w7IgbWV0dGVydmkgYWwgc2ljdXJvIGRhIGNhdHRpdmUgc29ycHJlc2UsIHBvaWNow6ggbm9uIHR1dHRlIGxlIGluZm9ybWF6aW9uaSByZWxhdGl2ZSBhbGxlIHN0cnV0dHVyZSBzb25vIHB1YmJsaWNhYmlsaSBzdWxsYSBHdWlkYSBwZXIgcmFnaW9uaSBkaSBzcGF6aW8uPC9wPg0KPHA+QXNwb3J0byo6PGJyIC8+TmVsIE5ldHdvcmsgbm9uIHNvbm8gcHJlc2VudGkgc3RydXR0dXJlIGNoZSBlZmZldHR1YW5vIHNvbG8gc2Vydml6aW8gZGkgPGEgaHJlZj0iaHR0cDovL3d3dy5jZWxpYWNoaWEuaXQvbWVudS9mYXEvZmFxLmFzcHg/aWRjYXQ9MTcmaWRmYXE9MTIzIj5hc3BvcnRvPC9hPiAocGl6emVyaWUgYWwgdGFnbGlvLCBnYXN0cm9ub21pZSBlY2MuLi4pLjxiciAvPkRpdmVyc2FtZW50ZSBzZSBlc2VyY2VudGkgY2hlIGZvcm5pc2Nvbm8gZ2nDoCBzZXJ2aXppbyBhaSB0YXZvbGksIHZvbGVzc2VybywgcGVyIGxvcm8gbGliZXJhIHNjZWx0YSwgb2ZmcmlyZSBhbmNoZSBsJ29wemlvbmUgZGVsbCdhc3BvcnRvIHNpYSBwZXIgbGEgcGl6emEgY2hlIHBlciBhbHRyZSBwaWV0YW56ZSwgZXNzbyDDqCBkaXNjaXBsaW5hdG8gc2Vjb25kbyByZWdvbGUgY29kaWZpY2F0ZSwgcmVsYXRpdmUgYWkgY29udGVuaXRvcmkgZSBhbCBsb3JvIHN0b2NjYWdnaW8gZWQgaW5kaXZpZHVhemlvbmU7IGFuY2hlIHF1ZXN0byBzZXJ2aXppbyB2aWVuZSBtb25pdG9yYXRvIGRhbGwnYXR0aXZpdMOgIHBlcmlvZGljYSBkZWkgVHV0b3IgcmVnaW9uYWxpLjwvcD4NCjxwPlNlZ25hbGF6aW9uaTogPGJyIC8+UGVyIG9nbmkgZXZlbnR1YWxlIGlub3NzZXJ2YW56YSByaWxldmF0YSwgcmVsYXRpdmFtZW50ZSBhIHR1dHRlIGxlIHN0cnV0dHVyZSBwdWJibGljYXRlIHN1IHF1ZXN0ZSBwYWdpbmUsIHNpIHByZWdhIGRpIGlub2x0cmFyZSB1bmEgcmVsYXppb25lIGRldHRhZ2xpYXRhIHRyYW1pdGUgZmF4IG8gbWFpbCBhOjxiciAvPi0gU2VncmV0ZXJpYSBBSUMgUmVnaW9uYWxlIGRpIGFwcGFydGVuZW56YTsgPGJyIC8+LSBTZWdyZXRlcmlhIE5hemlvbmFsZSBBSUMgQWxpbWVudGF6aW9uZSBGdW9yaSBDYXNhIChmYXggMDg4My4xOTUwMjEzOyBlbWFpbDogPGEgaHJlZj0ibWFpbHRvOnJpc3RvcmF6aW9uZUBjZWxpYWNoaWEuaXQiPnJpc3RvcmF6aW9uZUBjZWxpYWNoaWEuaXQ8L2E+KSBjb24gb2dnZXR0byDigJxzZWduYWxhemlvbmUgLSBpbm9zc2VydmFuemHigJ0uIDxiciAvPkxlIHNlZ25hbGF6aW9uaSBkb3ZyYW5ubyBlc3NlcmUgaW5vbHRyYXRlIGVudHJvIHVuIG1lc2UgZGFsbGEgdmVyaWZpY2F0YSBpbm9zc2VydmFuemEsIGluZGljYW5kbyBjb24gcHJlY2lzaW9uZSBpbCBub21lIGRlbCBsb2NhbGUsIGlsIGx1b2dvIGUgbGEgZGF0YS4gTm9uIHNhcmFubm8gYWNjZXR0YXRlIHNlZ25hbGF6aW9uaSBhbm9uaW1lLCBwZXIgY3VpIMOoIHJpY2hpZXN0byBub21lIGUgY29nbm9tZSBkZWwgc2VnbmFsYW50ZSBhbmNoZSBzZSB0YWxpIGRhdGksIG5lbCByaXNwZXR0byBkZWxsYSBwcml2YWN5LCBub24gc2FyYW5ubyBkaWZmdXNpLjxiciAvPlZlcnJhbm5vIHByZXNlIGluIGNvbnNpZGVyYXppb25lIHNvbHRhbnRvIHNlZ25hbGF6aW9uaSBpbmVyZW50aSBhbGxhIGN1Y2luYS9jb2xhemlvbmUvZ2VsYXRpIHNlbnphIGdsdXRpbmUsIG1lbnRyZSBub24gcG90cmFubm8gZXNzZXJlIHByZXNlIGluIGNvbnNpZGVyYXppb25lIHNlZ25hbGF6aW9uaSBkaSBhbHRyYSBuYXR1cmEgKGNvc3RpLCBpZ2llbmUsIGVkdWNhemlvbmUsIHByZW5vdGF6aW9uZSwgZWNjLi4uKSBpbiBxdWFudG8gbm9uIGluZXJlbnRpIGFsIFByb2dldHRvIEFsaW1lbnRhemlvbmUgRnVvcmkgQ2FzYS48L3A+DQo8cD5MYSB2b3N0cmEgY29sbGFib3JhemlvbmUgY29udHJpYnVpcsOgIGEgbWlnbGlvcmFyZSBpbCBQcm9nZXR0byBBSUMgQWxpbWVudGF6aW9uZSBGdW9yaSBDYXNhIGUgbGEgcXVhbGl0w6AgZGVsIHNlcnZpemlvIG9mZmVydG8gZGFnbGkgZXNlcmNpemkgZGVsIE5ldHdvcmsuPC9wPg0KPGRpdiBzdHlsZT0iYmFja2dyb3VuZC1jb2xvcjogI2U5ZTllOTsgZm9udC13ZWlnaHQ6IGJvbGRlcjsgYm9yZGVyOiAjMzMzIDFweCBkYXNoZWQ7IHBhZGRpbmc6IDVweDsiPklsIFRlYW0gZGkgVHV0b3IgQUlDIG1vbml0b3JhIGdsaSBlc2VyY2l6aSBkZWxsYSBjYXRlbmEgZWZmZXR0dWFuZG8gdmVyaWZpY2hlIGVkIG9mZnJlbmRvIGxhIGNvbGxhYm9yYXppb25lIG5lY2Vzc2FyaWEsIG1hIHJlc3RhIGludGVzbyBjaGUgQUlDIG5vbiBzaSBhc3N1bWUgYWxjdW5hIHJlc3BvbnNhYmlsaXTDoCBsYSBxdWFsZSByaW1hbmUgZXNjbHVzaXZhbWVudGUgZGVsbOKAmWF6aWVuZGEgY2hlIG9mZnJlIGlsIHNlcnZpemlvLjwvZGl2Pg0KPHA+VGVhbSBBSUMgQWxpbWVudGF6aW9uZSBGdW9yaSBDYXNhPC9wPmQCEw8WAh4FY2xhc3MFC3ZvY2VfYXR0aXZhZGRsvczI7Q/dVGdL3tDlKUdJAmxmug==" />
-</div>
 
-<script type="text/javascript">
-//<![CDATA[
-var theForm = document.forms['aspnetForm'];
-if (!theForm) {
-    theForm = document.aspnetForm;
-}
-function __doPostBack(eventTarget, eventArgument) {
-    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
-        theForm.__EVENTTARGET.value = eventTarget;
-        theForm.__EVENTARGUMENT.value = eventArgument;
-        theForm.submit();
-    }
-}
-//]]>
-</script>
+<body
+    onload="MM_preloadImages('../res/img/header_menu/home_roll.png','../res/img/header_menu/aic_roll.png','../res/img/header_menu/norme_roll.png','../res/img/header_menu/info_roll.png','../res/img/header_menu/comunicazione_roll.png','../res/img/header_menu/fondazione_roll.png')">
+    <form name="aspnetForm" method="post" action="Dieta.aspx?SS=95&amp;M=102" id="aspnetForm">
 
+        <!-- <script src="/WebResource.axd?d=W5UFj2hbQO89o90s4VKhLBeNytLZdbh76jw8m5YK3i2g_42lkQej6rUS4YMS6qn2qzdarTjUDYxKuZdb6cgNLA3sIaM1&amp;t=635169008633836156" type="text/javascript"></script> -->
+        <div id="page">
+            <p>
+                <img src="https://afcaic.it/uploads/RISTORAZIONE.jpg" alt="ristoranti" style="border:none;" />
+                <img src="https://afcaic.it/uploads/DOVE%20DORMIRE.jpg" style="border:none;" />
+                <img src="https://afcaic.it/uploads/GELATERIA.jpg" style="border:none;" />
+                <img src="https://afcaic.it/uploads/CATERING-SALA%20RICEV..jpg" style="border:none;" />
+                <img src="https://afcaic.it/uploads/LABOR.%20ARTIG.%20PIZZA%20ASPORTO.jpg" style="border:none;" />
+                <img src="https://afcaic.it/uploads/PIZZERIA.jpg" style="border:none;" />
+                <img src="https://afcaic.it/uploads/RISTORAZIONE%20VELOCE.jpg" style="border:none;" />
+            </p>
 
-<script src="/WebResource.axd?d=W5UFj2hbQO89o90s4VKhLBeNytLZdbh76jw8m5YK3i2g_42lkQej6rUS4YMS6qn2qzdarTjUDYxKuZdb6cgNLA3sIaM1&amp;t=635169008633836156" type="text/javascript"></script>
-<div id="page">
-<div id="menu_top">
- <div id="menu_top_sx"> <!-- ex left-col-->
-    <ul id="ctl00_ul_menu_top_sx">
+            <div class="entry">
+                <div id="formRicercaStrutture"></div>
 
-      <li><a href="http://forum.celiachia.it" target="_blank" class="@@(_document['class_forum'])@@">FORUM</a> | </li>
-     <li><a href="/menu/faq.aspx?idcat=6" target="_top" class="@@(_document['class_faq'])@@">FAQ</a> | </li>
-     <li><a href="/menu/Link.aspx?idcat=3" target="_top" class="@@(_document['class-links'])@@">LINKS</a></li>
-      <!--<li><a href="#" class="@@(_document['class_aziende'])@@">AZIENDE/OPERATORI</a> | </li>
-      <li><a href="#" class="@@(_document['class_press'])@@">PRESS</a></li>-->
-    </ul>
+                <br />
+                <br />
+                <div id="risultatiRicercaStrutture">
+                </div>
 
-  </div><!--/menu_top/menu_top_sx -->
-<div id="menu_top_dx">
-      <ul>
+                <br />
+                <br />
+                <br />
+                <br />
+                <div id="dettaglioStruttura">
 
-        <li id="testoRegistrati"><a href="../res/account/registrazione.aspx" id="ctl00_A1" class="testo_menu_dx" target="_top">Registrati</a><label class="separatore"> | </label></li>
+                </div>
+            </div>
+        </div>
 
-        <li><input type="text" ID="txtRicerca" class="input_menu_dx">&nbsp;<a href="#" class="testo_menu_dx" onclick="return cercaNelSito(document.forms[0]);">Cerca</a></li
-     >
-         <li id="testoLogin"><label class="separatore"> | </label><a href="../res/account/login.aspx" id="ctl00_A2" class="testo_menu_dx" target="_top">Login</a>
-
-         </li>
-
-      </ul>
-  </div><!--/menu_top/menu_top_dx -->
-</div>
-<!--/menu_top -->
-
-<div id="header">
- <div id="apDiv1"><a href="/HOME/HomePage.aspx"><img src="../res/img/header_menu/logo_aic.gif" align="middle" width="321" height="64" /></a></div>
-<div id="apDiv2">
-    <div id="logo_30"><img src="../res/img/header_menu/logo_30.png" alt="30 anni" /></div>
-    <div id="sostienici"><a href="/AIC/AIC.aspx?SS=353"><img src="../res/img/header_menu/logo_sostienici.png" alt="sostienici" /></a></div>
-</div><!-- apDiv2 -->
-    <!--/menu_top -->
- <div id="apDiv3">
-    <a href="/home/HomePage.aspx" id="ctl00_lnkHome" target="_top" onclick="MM_nbGroup('down','group1','home','',1)" onmouseover="MM_nbGroup('over','home','../res/img/header_menu/home_roll.png','',1)" onmouseout="MM_nbGroup('out')"><img src="../res/img/header_menu/home_top.png" alt="home page" name="home" border="0" id="home" onload="" /></a><a href="/aic/Aic.aspx" id="ctl00_lnkAIC" target="_top" onclick="MM_nbGroup('down','group1','aic_celiachia','',1)" onmouseover="MM_nbGroup('over','aic_celiachia','../res/img/header_menu/aic_roll.png','',1)" onmouseout="MM_nbGroup('out')"><img src="../res/img/header_menu/aic_top.png" alt="aic e celiachia" name="aic_celiachia" border="0" id="aic_celiachia" onload="" /></a><a href="/dieta/Dieta.aspx" id="ctl00_lnkDieta" target="_top" onclick="MM_nbGroup('down','group1','dieta_senza_glutine','',1)" onmouseover="MM_nbGroup('over','dieta_senza_glutine','','',1)" onmouseout="MM_nbGroup('out')"><img src="../res/img/header_menu/dieta_down.png" alt="dieta senza glutine" name="dieta_senza_glutine" border="0" id="Img3" onload="" /></a><a href="/norme/Norme.aspx" id="ctl00_lnkNorme" target="_top" onclick="MM_nbGroup('down','group1','istituzioni_norme','',1)" onmouseover="MM_nbGroup('over','istituzioni_norme','../res/img/header_menu/norme_roll.png','',1)" onmouseout="MM_nbGroup('out')"><img src="../res/img/header_menu/norme_top.png" alt="istituzioni/norme" name="istituzioni_norme" border="0" id="istituzioni_norme" onload="" /></a><a href="/eventi/EventiProgetti.aspx" id="ctl00_lnkEventi" target="_top" onclick="MM_nbGroup('down','group1','eventi_e_progetti','',1)" onmouseover="MM_nbGroup('over','eventi_e_progetti','../res/img/header_menu/eventi_roll.png','',1)" onmouseout="MM_nbGroup('out')"><img src="../res/img/header_menu/eventi_top.png" alt="Eventi e Progetti" name="eventi_e_progetti" border="0" id="eventi_e_progetti" onload="" /></a><a href="/comunicazione/Comunicazione.aspx" id="ctl00_lnkComunicazione" target="_top" onclick="MM_nbGroup('down','group1','comunicazione','',1)" onmouseover="MM_nbGroup('over','comunicazione','../res/img/header_menu/comunicazione_roll.png','',1)" onmouseout="MM_nbGroup('out')"><img src="../res/img/header_menu/comunicazione_top.png" alt="comunicazione" name="comunicazione" border="0" id="comunicazione" onload="" /></a><a href="/fondazione/Fondazione.aspx" id="ctl00_lnkFondazione" target="_top" onclick="MM_nbGroup('down','group1','fondazione_celiachia','',1)" onmouseover="MM_nbGroup('over','fondazione_celiachia','../res/img/header_menu/fondazione_roll.png','',1)" onmouseout="MM_nbGroup('out')"><img src="../res/img/header_menu/fondazione_top.png" alt="fondazione celiachia" name="fondazione_celiachia" border="0" id="fondazione_celiachia" onload="" /></a>
-
- </div>
-</div>
-
-<div id="barra_menu">
-     <ul class="sottomenu_orizzontale">
-
-    <li class='voce'><a href='Dieta.aspx?SS=182'>Alimentazione</a></li> | <li class='voce'><a href='Dieta.aspx?SS=185'>Prontuario</a></li> | <li class='voce'><a href='Dieta.aspx?SS=176'>Marchio Spiga Barrata</a></li> | <li class='voce_attiva'><a href='Dieta.aspx?SS=95'>Alimentazione Fuori Casa</a></li> | <li class='voce'><a href='Dieta.aspx?SS=168'>Ricette</a></li>
-
-
-</ul>
-    </div>
-
-
-<!--/header -->
-<div id="content1" >
-<div id="left-col">
-  <!-- TemplateBeginIf cond="OptionalVerticaleRegion" -->
-    <ul class="menu_laterale"><!-- class="voce_attiva" -->
-
-<li class='voce'>
-	<a href='Dieta.aspx?SS=95&M=102'>Progetto Alimentazione Fuori Casa</a>
-</li>
-<li class='voce_attiva'>
-	<a href='ricercaStrutture.php'>Ricerca esercizi</a>
-</li>
-<li class='sottovoce'>
-	<a href='Dieta.aspx?SS=95&M=1280'>English Informations</a>
-</li>
-<li class='voce'>
-	<a href='Dieta.aspx?SS=95&M=1103'>Legenda AFC</a>
-</li>
-
-<!--<li class='voce'>
-	<a href='/DIETA/afc/RistorantiHotel.aspx?SS=95&M=99'>Ristoranti/Pizzerie/Alberghi/Hotel</a>
-</li><li class='voce'><a href='Dieta.aspx?SS=95&M=1061'>Laboratori Artigianali</a></li><li class='voce'><a href='/DIETA/afc/bar.aspx?SS=95&M=103'>Bar</a></li><li class='voce'><a href='/DIETA/afc/BandB.aspx?SS=95&M=104'>Bed & Breakfast</a></li><li class='voce'><a href='Dieta.aspx?SS=95&M=1046'>Rifugi di montagna</a></li><li class='voce'><a href='/DIETA/afc/gelaterie.aspx?SS=95&M=197'>Gelaterie</a></li><li class='voce'><a href='Dieta.aspx?SS=95&M=179'>Alimentazione in Viaggio</a></li><li class='sottovoce'><a href='/DIETA/afc/Airest.aspx?SS=95&M=695'>Airest</a></li><li class='sottovoce'><a href='/DIETA/afc/autogrill.aspx?SS=95&M=180'>Autogrill</a></li><li class='sottovoce'><a href='/DIETA/afc/finigrill.aspx?SS=95&M=199'>Finigrill</a></li><li class='sottovoce'><a href='/DIETA/afc/MyChef.aspx?SS=95&M=506'>Mychef</a></li><li class='voce'><a href='Dieta.aspx?SS=95&M=513'>Barca a Vela</a></li><li class='voce'><a href='Dieta.aspx?SS=95&M=1039'>Centri Velici</a></li><li class='voce'><a href='Dieta.aspx?SS=95&M=514'>Crociere</a></li><li class='voce'><a href='Dieta.aspx?SS=95&M=945'>Parchi Divertimento</a></li><li class='voce'><a href='Dieta.aspx?SS=95&M=515'>Vending</a></li><li class='voce'><a href='Dieta.aspx?SS=95&M=516'>DS Pizza Point</a></li><li class='voce _non_cliccabile'><a>Partnership e Servizi</a></li><li class='sottovoce'><a href='Dieta.aspx?SS=95&M=107'>Grom gelaterie</a></li><li class='sottovoce'><a href='Dieta.aspx?SS=95&M=108'>89.24.24</a></li><li class='sottovoce'><a href='Dieta.aspx?SS=95&M=508'>Sapere Insieme - campo estivo inglese per minori</a></li><li class='sottovoce'><a href='Dieta.aspx?SS=95&M=1074'>Special Guest Alpitour</a></li><li class='sottovoce'><a href='Dieta.aspx?SS=95&M=509'>BuonChef</a></li><li class='sottovoce'><a href='Dieta.aspx?SS=95&M=941'>Day Ristoservice</a></li><li class='sottovoce'><a href='Dieta.aspx?SS=95&M=822'>Pellegrini Card</a></li><li class='sottovoce'><a href='Dieta.aspx?SS=95&M=511'>Ticket Restaurant</a></li><li class='sottovoce'><a href='Dieta.aspx?SS=95&M=510'>Torna Qui! Ticket</a></li><li class='sottovoce'><a href='Dieta.aspx?SS=95&M=914'>Welfare Company</a></li><li class='sottovoce'><a href='Dieta.aspx?SS=95&M=512'>POI per Tom Tom </a></li><li class='voce'><a href='Dieta.aspx?SS=95&M=519'>Regole Fondamentali per una Alimentazione Priva di Glutine Fuori Casa</a></li><li class='voce'><a href='Dieta.aspx?SS=95&M=781'>AIC Mobile</a></li><li class='voce'><a href='Dieta.aspx?SS=95&M=825'>Aggiornamenti alla Guida AFC </a></li> -->
-
-   </ul>
-  <!-- TemplateEndIf -->
-</div>
-  <div id="right-col">
-  <div class="post">
-	<div class="post-title">
-		<h2>
-
-    Progetto Alimentazione Fuori Casa
-           </h2>
-	</div>
-<p>&nbsp;</p>
-<p>Per visualizzare tutte le proposte di una determinata città, non è necessario compilare l’intera maschera, ma è sufficiente inserire solo la Regione o la Provincia di riferimento e selezionare o digitare la città nello spazio apposito.    </p>
-<p>To see all the gluten-free venues of a specific city, you don’t need to fill in the entire form: it’s sufficient to select, in the form below, only the Region or the Province and then select or write the name of the city.</p>
-<p><span style="color:red">ATTENZIONE:</span> le uniche strutture aderenti ad AFC sono quelle segnalate sulla mappa con i seguenti loghi, da distinguere da quelli comunemente utilizzati da Google nella mappa per segnalare altre strutture non aderenti:</p>
-<p><span style="color:red">PAY ATTENTION PLEASE:</span> venues joining our Eating Out program are identified on the map only by the following logos, different from the ones used by Google to point out other NOT GLUTEN-FREE venues</p>
-<p>
-<img src="https://afcaic.it/uploads/RISTORAZIONE.jpg" style="border:none;"/>
-<img src="https://afcaic.it/uploads/DOVE%20DORMIRE.jpg" style="border:none;"/>
-<img src="https://afcaic.it/uploads/GELATERIA.jpg" style="border:none;"/>
-<img src="https://afcaic.it/uploads/CATERING-SALA%20RICEV..jpg" style="border:none;"/>
-<img src="https://afcaic.it/uploads/LABOR.%20ARTIG.%20PIZZA%20ASPORTO.jpg" style="border:none;"/>
-<img src="https://afcaic.it/uploads/PIZZERIA.jpg" style="border:none;"/>
-<img src="https://afcaic.it/uploads/RISTORAZIONE%20VELOCE.jpg" style="border:none;"/>
-</p>
-
-	<div class="entry">
-	  	  <div id="formRicercaStrutture"></div>
-
-		<br/><br/>
-	    <div id="risultatiRicercaStrutture">
-	    </div>
-
-	    <br /><br />
-	    <br /><br />
-	    <div id="dettaglioStruttura">
-
-	    </div>
-</div>
-    </div>
-    
-    
-    </div>
-</div>
-
-<div id="content_top">Copyright&copy;2001, Associazione Italiana Celiachia Onlus. Tutti i diritti riservati. All rights reserved. Ogni diritto sulle banche dati è riservato.&nbsp;&nbsp;&nbsp;
-<a href="#page"><img src="../res/img/dieta/dieta_top.gif" style="border:none;"/></a></div>
-         <div id="footer">
-  <div id="footer_sx"> <!-- ex menu_sx-->
-    <ul>
-      <li><a href="/home/HomePage.aspx" id="ctl00_lnkFootHome">Home</a></li>
-      <li><a href="/aic/Aic.aspx" id="ctl00_lnkFootAIC">AIC&nbsp;e&nbsp;Celiachia</a></li>
-      <li><a href="/dieta/Dieta.aspx" id="ctl00_lnkFootDieta" class="voce_attiva">Dieta&nbsp;senza&nbsp;glutine</a></li>
-      <li><a href="/norme/Norme.aspx" id="ctl00_lnkFootNorme">Istituzioni/Norme</a></li>
-      <li><a href="/eventi/EventiProgetti.aspx" id="ctl00_lnkFootEventi">Eventi e progetti</a></li>
-      <li><a href="/comunicazione/Comunicazione.aspx" id="ctl00_lnkFootComunicazione">Comunicazione</a></li>
-      <li><a href="/fondazione/Fondazione.aspx" id="ctl00_lnkFootFondazione">FC&nbsp;e&nbsp;ricerca</a></li>
-    </ul>
-  </div><!--/footer/footer_sx -->
-  <!-- <div id="footer_cx"></div>--><!-- footer_cx-->
-  <div id="footer_dx"><!-- ex menu_dx-->
-    <ul>
-      <li><a id="lnkFootContatti" href="/Aic/AIC.aspx?SS=350&M=364">CONTATTI</a> |</li>
-	  <li><a id="lnkFootNote" href="/menu/note.aspx">NOTE</a> | </li>
-      <li><a id="lnkFootCredits" href="/menu/credits.aspx">CREDITS</a></li>
-    </ul>
-  </div><!--/footer/footer_dx -->
-</div><!--/footer --><!--/menu_footer -->
-
-</div>
-</form>
+    </form>
 </body>
 
 </html>

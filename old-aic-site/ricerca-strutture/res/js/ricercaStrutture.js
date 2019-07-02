@@ -5,8 +5,8 @@
  * Tutto questo non dovrebe servire più
  */
 
-if(typeof(dataMinimaModificheStruttura) == 'undefined'){
-	dataMinimaModificheStruttura = new Date(new Date().getFullYear()-1, 0, 1);
+if (typeof (dataMinimaModificheStruttura) == 'undefined') {
+	dataMinimaModificheStruttura = new Date(new Date().getFullYear() - 1, 0, 1);
 }
 
 $('#dataInizio').datepicker({
@@ -29,29 +29,28 @@ $('#dataFine').datepicker({
 
 var myStrutture =
 {
-    creaFormRicercaStrutture:function()
-    {
-        $.ajax(
-        {
-             url:"https://www.afcaic.it/webservices/creaFormRicercaStrutture.php",
-             dataType: 'jsonp',
-             success:function(json)
-             {
-		json = json.replace(/http:\/\/afcaic.it/gi, "https://afcaic.it");
-                $('#formRicercaStrutture').html(json);
-             },
-             error:function(){
-                 alert("Error");
-             }
-        });
-    }
-,
-	esportaStrutture:function()
-	{
+	creaFormRicercaStrutture: function () {
+		let heightResultDiv = 800;
+		$.ajax(
+			{
+				url: "https://www.afcaic.it/webservices/creaFormRicercaStrutture.php",
+				dataType: 'jsonp',
+				success: function (json) {
+					json = json.replace(/http:\/\/afcaic.it/gi, "https://afcaic.it");
+					json = json.replace("tableHeight: 200", "tableHeight: " + heightResultDiv);
+					$('#formRicercaStrutture').html(json);
+				},
+				error: function () {
+					alert("Error");
+				}
+			});
+	}
+	,
+	esportaStrutture: function () {
 
-	    var url = 'https://www.afcaic.it/public/esportaStruttureModificate';
+		var url = 'https://www.afcaic.it/public/esportaStruttureModificate';
 
-	    var categoriaSelezionata = ($('#filtraCategorie').val() == '-1') ? '*' : $('#filtraCategorie').val();
+		var categoriaSelezionata = ($('#filtraCategorie').val() == '-1') ? '*' : $('#filtraCategorie').val();
 
 		//var tipologiaSelezionata = ($('#filtraTipologie').val() == '-1') ? '*' : $('#filtraTipologie').val();
 
@@ -64,70 +63,62 @@ var myStrutture =
 
 		//console.log(dataInizio);
 
-	    //if(regioneSelezionata !== '*'){ url += '/'+regioneSelezionata; }
+		//if(regioneSelezionata !== '*'){ url += '/'+regioneSelezionata; }
 
-	    url += '/'+regioneSelezionata;
-	    var dataInizioTimestamp = null;
+		url += '/' + regioneSelezionata;
+		var dataInizioTimestamp = null;
 		var dataFineTimestamp = null;
 
-	    if(dataInizio !== '*')
-	    {
-	        dataInizioTimestamp = myStrutture.textDateToDatetimeFormat(dataInizio, '/');
-	        url += '/'+dataInizioTimestamp;
-	    }
-	    else { url += '/'+dataInizio; }
+		if (dataInizio !== '*') {
+			dataInizioTimestamp = myStrutture.textDateToDatetimeFormat(dataInizio, '/');
+			url += '/' + dataInizioTimestamp;
+		}
+		else { url += '/' + dataInizio; }
 
-	    if(dataFine !== '*')
-	    {
-	        dataFineTimestamp = myStrutture.textDateToDatetimeFormat(dataFine, '/');
-	        url += '/'+dataFineTimestamp;
-	    }
-	    else { url += '/'+dataFine; }
+		if (dataFine !== '*') {
+			dataFineTimestamp = myStrutture.textDateToDatetimeFormat(dataFine, '/');
+			url += '/' + dataFineTimestamp;
+		}
+		else { url += '/' + dataFine; }
 
-	    url += '/'+categoriaSelezionata;
+		url += '/' + categoriaSelezionata;
 
 		var checkedStatiStruttura = $("input[name='statoStruttura']:checked");
 
 		var stati = Array();
-		if(checkedStatiStruttura !== undefined && checkedStatiStruttura.length > 0)
-		{
-		    checkedStatiStruttura.each(function(){
-		        stati.push($(this).val());
-		    });
-		    if($.inArray('nuove', stati) > -1)
-		    {
-		        url += '/true';
-		    }
-		    else { url += '/false'; }
+		if (checkedStatiStruttura !== undefined && checkedStatiStruttura.length > 0) {
+			checkedStatiStruttura.each(function () {
+				stati.push($(this).val());
+			});
+			if ($.inArray('nuove', stati) > -1) {
+				url += '/true';
+			}
+			else { url += '/false'; }
 
-		    if($.inArray('modificate', stati) > -1)
-		    {
-		        url += '/true';
-		    }
-		    else { url += '/false'; }
+			if ($.inArray('modificate', stati) > -1) {
+				url += '/true';
+			}
+			else { url += '/false'; }
 
-		    if($.inArray('eliminate', stati) > -1)
-		    {
-		        url += '/true';
-		    }
-		    else { url += '/false'; }
+			if ($.inArray('eliminate', stati) > -1) {
+				url += '/true';
+			}
+			else { url += '/false'; }
 
-		    $('#checkboxStatoStruttura').removeClass('border_red');
-		    window.location.href = url;
+			$('#checkboxStatoStruttura').removeClass('border_red');
+			window.location.href = url;
 		}
-		else
-		{
-		    $('#checkboxStatoStruttura').addClass('border_red');
-		    return false;
+		else {
+			$('#checkboxStatoStruttura').addClass('border_red');
+			return false;
 		}
 	},
-	textDateToDatetimeFormat:function(textDate, delimiter)
-	{
-	    var regex = /[0-9]{1,2}\/[0-9]{1,2}\/[0-9]{4}/;
-	    var isMatched = textDate.match(regex);
-	    if(isMatched === null) { return null; }
-	    var tmp = textDate.split('/');
-	    var newDateTime = tmp[2]+'-'+tmp[1]+'-'+tmp[0];
-	    return newDateTime;
+	textDateToDatetimeFormat: function (textDate, delimiter) {
+		var regex = /[0-9]{1,2}\/[0-9]{1,2}\/[0-9]{4}/;
+		var isMatched = textDate.match(regex);
+		if (isMatched === null) { return null; }
+		var tmp = textDate.split('/');
+		var newDateTime = tmp[2] + '-' + tmp[1] + '-' + tmp[0];
+		return newDateTime;
 	},
 };
