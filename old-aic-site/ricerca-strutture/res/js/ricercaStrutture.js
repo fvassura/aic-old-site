@@ -37,6 +37,7 @@ var myStrutture =
              dataType: 'jsonp',
              success:function(json)
              {
+		json = json.replace(/http:\/\/afcaic.it/gi, "https://afcaic.it");
                 $('#formRicercaStrutture').html(json);
              },
              error:function(){
