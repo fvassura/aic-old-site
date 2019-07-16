@@ -49,6 +49,38 @@
         * html .ui-autocomplete {
             height: 200px;
         }
+
+        .loader {
+            border: 6px solid lightgray;
+            border-radius: 50%;
+            border-top: 6px solid blue;
+            width: 24px;
+            height: 24px;
+            -webkit-animation: spin 2s linear infinite;
+            /* Safari */
+            animation: spin 2s linear infinite;
+        }
+
+        /* Safari */
+        @-webkit-keyframes spin {
+            0% {
+                -webkit-transform: rotate(0deg);
+            }
+
+            100% {
+                -webkit-transform: rotate(360deg);
+            }
+        }
+
+        @keyframes spin {
+            0% {
+                transform: rotate(0deg);
+            }
+
+            100% {
+                transform: rotate(360deg);
+            }
+        }
     </style>
 
 
@@ -58,9 +90,19 @@
     onload="MM_preloadImages('../res/img/header_menu/home_roll.png','../res/img/header_menu/aic_roll.png','../res/img/header_menu/norme_roll.png','../res/img/header_menu/info_roll.png','../res/img/header_menu/comunicazione_roll.png','../res/img/header_menu/fondazione_roll.png')">
     <form name="aspnetForm" method="post" action="Dieta.aspx?SS=95&amp;M=102" id="aspnetForm">
 
+	
+		<a href="https://fvassura.github.io/fvassu/"> HOME </a> 
         <!-- <script src="/WebResource.axd?d=W5UFj2hbQO89o90s4VKhLBeNytLZdbh76jw8m5YK3i2g_42lkQej6rUS4YMS6qn2qzdarTjUDYxKuZdb6cgNLA3sIaM1&amp;t=635169008633836156" type="text/javascript"></script> -->
-        <div id="page">
-            <p>
+				
+		<div class="wrap-loader" style="display:none;">
+			<div class="loader"></div>
+			<h1>LOADING...</h1>
+		</div>
+		
+		<button id="load-full">CARICA TUTTO</button>
+		
+        <div id="page" style="display:none;">
+          <!--   <p>
                 <img src="https://afcaic.it/uploads/RISTORAZIONE.jpg" alt="ristoranti" style="border:none;" />
                 <img src="https://afcaic.it/uploads/DOVE%20DORMIRE.jpg" style="border:none;" />
                 <img src="https://afcaic.it/uploads/GELATERIA.jpg" style="border:none;" />
@@ -68,7 +110,7 @@
                 <img src="https://afcaic.it/uploads/LABOR.%20ARTIG.%20PIZZA%20ASPORTO.jpg" style="border:none;" />
                 <img src="https://afcaic.it/uploads/PIZZERIA.jpg" style="border:none;" />
                 <img src="https://afcaic.it/uploads/RISTORAZIONE%20VELOCE.jpg" style="border:none;" />
-            </p>
+            </p> -->
 
             <div class="entry">
                 <div id="formRicercaStrutture"></div>
@@ -76,6 +118,31 @@
                 <br />
                 <br />
                 <div id="risultatiRicercaStrutture">
+                    <table id="risultatiTable" class="table display">
+                        <thead>
+                            <tr>
+                                <th>ID</th>
+                                <th>IdCategoria</th>
+                                <th>CategoriaGuida</th>
+                                <th>IconaCategoriaGuida</th>
+                                <th>IdRegioneItalia</th>
+                                <th>NomeRegioneItalia</th>
+                                <th>IdProvincia</th>
+                                <th>NomeProvincia</th>
+                                <th>IdLocalita</th>
+                                <th>NomeLocalita</th>
+                                <th>Tipologie</th>
+                                <th>TipoEsteso</th>
+                                <th>Denominazione</th>
+                                <th>Indirizzo</th>
+                                <th>Telefono</th>
+                                <th>Latitudine</th>
+                                <th>Longitudine</th>
+                            </tr>
+                        </thead>
+                        <tbody></tbody>
+                    </table>
+
                 </div>
 
                 <br />
@@ -88,6 +155,7 @@
             </div>
         </div>
 
+		<iframe src="https://www.google.com/maps/d/embed?mid=16SjzSol5fbi08wHXP1GFcZ8K1wB2EVbk" width="70%" height="800"></iframe>
     </form>
 </body>
 
